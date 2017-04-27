@@ -5,6 +5,10 @@
  */
 package tallerexcepciones;
 
+import Excepciones.ExcepcionSalario;
+import Excepciones.ExceptionLenguaje;
+import Excepciones.ExcepcionNombre;
+
 /**
  *
  * @author Estudiante
@@ -12,8 +16,15 @@ package tallerexcepciones;
 public class Programador extends Empleado{
     protected String lenguaje;
 
-    public Programador(String lenguaje, String nombre, double salario, int id) {
+    public Programador(String lenguaje, String nombre, double salario, int id)
+            throws ExcepcionNombre, ExcepcionSalario, ExceptionLenguaje {
         super(nombre, salario, id);
+        
+        if(lenguaje.equals("Go"))
+            throw new ExceptionLenguaje();
+        
+        
+        
         this.lenguaje = lenguaje;
     }
 

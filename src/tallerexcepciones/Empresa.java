@@ -39,8 +39,14 @@ public class Empresa {
         return informacion;
     }
     
-    public String reporteNomina(){
+    /*public String reporteNomina(){
         return "s";
+    }*/
+
+    public ArrayList<Trabajador> getTrabajadores() {
+        return trabajadores;
     }
+    
+    
     
 }

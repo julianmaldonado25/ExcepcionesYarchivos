@@ -18,6 +18,10 @@ public abstract  class Trabajador {
     }
     public abstract double calcularSalario();
     public abstract String listarInformacion();
+
+    public int getId() {
+        return id;
+    }
     
     
 }

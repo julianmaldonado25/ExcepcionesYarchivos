@@ -5,14 +5,19 @@
  */
 package tallerexcepciones;
 
+import Excepciones.ExcepcionSalario;
+import Excepciones.ExcepcionNombre;
+
 /**
  *
  * @author Estudiante
  */
 public class Administrador extends Empleado {
 
-    public Administrador(String nombre, double salario, int id) {
-        super(nombre, 100, id);
+    public Administrador(String nombre, int id) 
+            throws ExcepcionNombre, ExcepcionSalario {
+        
+        super(nombre, 1000000, id);
     }
 
     @Override

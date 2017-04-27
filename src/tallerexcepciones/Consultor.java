@@ -19,12 +19,16 @@ public class Consultor  extends Trabajador{
 
     @Override
     public double calcularSalario() {
-        return 220;
+        return 1200000;
     }
 
     @Override
     public String listarInformacion() {
        return "Consultor: "+ this.id+", con la tarea de: "+this.labor;
+    }
+
+    public String getLabor() {
+        return labor;
     }
     
     
